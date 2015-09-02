@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+    <head>
+        <title> Law </title>
+        <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+    </head>
+
+    <body>
+     <div class="container">
+    	<div class="jumbotron"> <a href="/law/">
+    	<img src="{% static "images/xm1.jpg" %}" alt="Welcome to lexoom" /></a><br />
+    	 </div>
+
+    </div>
+
+{% block content %}{% endblock %}
+    </body>
+
+</html>

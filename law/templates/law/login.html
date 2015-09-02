@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+{% load static %}
+<title>Lexoom</title> 
+<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+</head> 
+<body> 
+    <div class="container">
+    	<div class="jumbotron"> <a href="/law/">
+    	<img src="{% static "images/xm1.jpg" %}" alt="Welcome to lexoom" /></a><br />
+    	 </div>
+
+    </div>
+	<div class="container">
+		<h1>Login to Lexoom </h1> 
+		<form id="login_form" method="post" action="/law/login/"> 
+		{% csrf_token %} 
+		<div class="form-group"> Username: <input type="text" name="username" value="" size="50" /></div> <br /> 
+		<p> Password: <input type="password" name="password" value="" size="50" /> </p><br /> 
+		<input type="submit" value="submit" />
+		</form>
+	</div>
+</body>
+</html>
